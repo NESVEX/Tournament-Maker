@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <title>Tournament</title>
+</head>
+<body>
+
+    <h1>Tournament!</h1>
+
+    <div>
+
+        <h3>Quarter Finals</h3>
+
+        <p>Q1 - Team 1 <input id="Q1L"> <input id="Q1V"> Team 2 </p>
+        <p>Q2 - Team 3 <input id="Q2L"> <input id="Q2V"> Team 4 </p>
+        <p>Q3 - Team 5 <input id="Q3L"> <input id="Q3V"> Team 6 </p>
+        <p>Q4 - Team 7 <input id="Q4L"> <input id="Q4V"> Team 8 </p>
+
+        <button onclick="quarterFinals()">Submit Results</button>
+
+    </div>
+    <div>
+
+        <h3>Semi-finals</h3>
+
+        <p>
+            S1 - <span id="localS1"><i>Winner Q1</i></span>  <input id="S1L">
+            <input id="S1V"> <span id="visitS1"><i>Winner Q2</i></span> 
+        </p>
+
+        <p>
+            S2 - <span id="localS2"><i>Winner Q3</i></span>  <input id="S2L">
+            <input id="S2V"> <span id="visitS2"><i>Winner Q4</i></span> 
+        </p>
+
+        <button onclick="semiFinals()">Submit Results</button>
+
+    </div>
+    <div>
+
+        <h3>Final</h3>
+
+        <p>
+            Final - <span id="localTeamFinal"><i>Winner S1</i></span>  <input id="localFinalScore">
+            <input id="visitFinalScore"> <span id="visitTeamFinal"><i>Winner S2</i></span> 
+        </p>
+
+        <button onclick="final()">Submit Result</button>
+
+    </div>
+    <div>
+
+        <h4><bold>The winner is: <span id="tournamentWinner"><i>___</i></span>!!! Congrats!</bold><h4>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
