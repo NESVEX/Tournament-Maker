@@ -14,14 +14,14 @@
 
         <h3>Introduce Team Names</h3>
 
-        <div><input placeholder="Team 1" id="team1" maxlength="15"></div>
-        <div><input placeholder="Team 2" id="team2" maxlength="15"></div>
-        <div><input placeholder="Team 3" id="team3" maxlength="15"></div>
-        <div><input placeholder="Team 4" id="team4" maxlength="15"></div>
-        <div><input placeholder="Team 5" id="team5" maxlength="15"></div>
-        <div><input placeholder="Team 6" id="team6" maxlength="15"></div>
-        <div><input placeholder="Team 7" id="team7" maxlength="15"></div>
-        <div><input placeholder="Team 8" id="team8" maxlength="15"></div>
+        <div><input placeholder="Team 1" id="team1" maxlength="10"></div>
+        <div><input placeholder="Team 2" id="team2" maxlength="10"></div>
+        <div><input placeholder="Team 3" id="team3" maxlength="10"></div>
+        <div><input placeholder="Team 4" id="team4" maxlength="10"></div>
+        <div><input placeholder="Team 5" id="team5" maxlength="10"></div>
+        <div><input placeholder="Team 6" id="team6" maxlength="10"></div>
+        <div><input placeholder="Team 7" id="team7" maxlength="10"></div>
+        <div><input placeholder="Team 8" id="team8" maxlength="10"></div>
 
         <div><button onclick="shuffleTeams()" id="shuffleBtn">Shuffle!</button></div>
 
@@ -30,40 +30,56 @@
 
         <h3>Quarter Finals</h3>
         
-        <div>
-            <span id="qTeam1"><i>Team 1</i></span>
-            <input id="Q1L" onkeypress=" return isNumber(event)" maxlength="3">
-            <input id="Q1V" onkeypress=" return isNumber(event)" maxlength="3">
-            <span id="qTeam2"><i>Team 2</i></span>
+        <div class="qFinals-match">
+            <div>
+                <span id="qTeam1"><i>Team 1</i></span>
+                <input id="Q1L" onkeypress=" return isNumber(event)" maxlength="3">
+            </div>
+            <div>
+                <span id="qTeam2"><i>Team 2</i></span>
+                <input id="Q1V" onkeypress=" return isNumber(event)" maxlength="3">
+            </div>
+            <div><button onclick="quarterFinal1()" id="quarterFinal1Btn">Submit</button></div>
         </div>
-        <div><button onclick="quarterFinal1()" id="quarterFinal1Btn">Submit</button></div>
 
 
-        <div>
-            <span id="qTeam3"><i>Team 3</i></span>
-            <input id="Q2L" onkeypress=" return isNumber(event)" maxlength="3">
-            <input id="Q2V" onkeypress=" return isNumber(event)" maxlength="3">
-            <span id="qTeam4"><i>Team 4</i></span>
+        <div class="qFinals-match">
+            <div>
+                <span id="qTeam3"><i>Team 3</i></span>
+                <input id="Q2L" onkeypress=" return isNumber(event)" maxlength="3">
+            </div>
+            <div>
+                <span id="qTeam4"><i>Team 4</i></span>
+                <input id="Q2V" onkeypress=" return isNumber(event)" maxlength="3">
+            </div>
+            <div><button onclick="quarterFinal2()" id="quarterFinal2Btn">Submit</button></div>
         </div>
-        <div><button onclick="quarterFinal2()" id="quarterFinal2Btn">Submit</button></div>
 
 
-        <div>
-            <span id="qTeam5"><i>Team 5</i></span> 
-            <input id="Q3L" onkeypress=" return isNumber(event)" maxlength="3">
-            <input id="Q3V" onkeypress=" return isNumber(event)" maxlength="3">
-            <span id="qTeam6"><i>Team 6</i></span>
+        <div class="qFinals-match">
+            <div>
+                <span id="qTeam5"><i>Team 5</i></span> 
+                <input id="Q3L" onkeypress=" return isNumber(event)" maxlength="3">
+            </div>
+            <div>
+                <span id="qTeam6"><i>Team 6</i></span>
+                <input id="Q3V" onkeypress=" return isNumber(event)" maxlength="3">
+            </div>
+            <div><button onclick="quarterFinal3()" id="quarterFinal3Btn">Submit</button></div>  
         </div>
-        <div><button onclick="quarterFinal3()" id="quarterFinal3Btn">Submit</button></div>
 
 
-        <div>
-            <span id="qTeam7"><i>Team 7</i></span>
-            <input id="Q4L" onkeypress=" return isNumber(event)" maxlength="3">
-            <input id="Q4V" onkeypress=" return isNumber(event)" maxlength="3"> 
-            <span id="qTeam8"><i>Team 8</i></span> 
+        <div class="qFinals-match">
+            <div>
+                <span id="qTeam7"><i>Team 7</i></span>
+                <input id="Q4L" onkeypress=" return isNumber(event)" maxlength="3">
+            </div>
+            <div>
+                <span id="qTeam8"><i>Team 8</i></span>
+                <input id="Q4V" onkeypress=" return isNumber(event)" maxlength="3"> 
+            </div> 
+            <div><button onclick="quarterFinal4()" id="quarterFinal4Btn">Submit</button></div>
         </div>
-        <div><button onclick="quarterFinal4()" id="quarterFinal4Btn">Submit</button></div>
 
 
     </div>
@@ -71,22 +87,30 @@
 
         <h3>Semi-finals</h3>
 
-        <div>
-            <span id="localS1"><i>Winner Q1</i></span>
-            <input id="S1L" onkeypress=" return isNumber(event)" maxlength="3">
-            <input id="S1V" onkeypress=" return isNumber(event)" maxlength="3">
-            <span id="visitS1"><i>Winner Q2</i></span> 
+        <div class="semiFinals-match">
+            <div>
+                <span id="localS1"><i>Winner Q1</i></span>
+                <input id="S1L" onkeypress=" return isNumber(event)" maxlength="3">
+            </div>
+            <div>
+                <span id="visitS1"><i>Winner Q2</i></span>
+                <input id="S1V" onkeypress=" return isNumber(event)" maxlength="3">
+            </div>
+            <div><button onclick="semiFinal1()" id="semiFinal1Btn">Submit</button></div>
         </div>
-        <div><button onclick="semiFinal1()" id="semiFinal1Btn">Submit</button></div>
 
 
-        <div>
-            <span id="localS2"><i>Winner Q3</i></span>
-            <input id="S2L" onkeypress=" return isNumber(event)" maxlength="3">
-            <input id="S2V" onkeypress=" return isNumber(event)" maxlength="3">
-            <span id="visitS2"><i>Winner Q4</i></span> 
+        <div class="semiFinals-match">
+            <div>
+                <span id="localS2"><i>Winner Q3</i></span>
+                <input id="S2L" onkeypress=" return isNumber(event)" maxlength="3">
+            </div>
+            <div>
+                <span id="visitS2"><i>Winner Q4</i></span>
+                <input id="S2V" onkeypress=" return isNumber(event)" maxlength="3">
+            </div>
+            <div><button onclick="semiFinal2()" id="semiFinal2Btn">Submit</button></div>
         </div>
-        <div><button onclick="semiFinal2()" id="semiFinal2Btn">Submit</button></div>
 
 
     </div>
@@ -94,13 +118,17 @@
 
         <h3>Final</h3>
 
-        <div>
-            <span id="localTeamFinal"><i>Winner S1</i></span>
-            <input id="localFinalScore" onkeypress=" return isNumber(event)" maxlength="3">
-            <input id="visitFinalScore" onkeypress=" return isNumber(event)" maxlength="3">
-            <span id="visitTeamFinal"><i>Winner S2</i></span> 
+        <div class="final-match">
+            <div>
+                <span id="localTeamFinal"><i>Winner S1</i></span>
+                <input id="localFinalScore" onkeypress=" return isNumber(event)" maxlength="3">
+            </div>
+            <div>
+                <span id="visitTeamFinal"><i>Winner S2</i></span> 
+                <input id="visitFinalScore" onkeypress=" return isNumber(event)" maxlength="3">
+            </div>
+            <div><button onclick="final()" id="finalBtn" >Submit</button></div>
         </div>
-        <div><button onclick="final()" id="finalBtn" >Submit</button></div>
 
 
     </div>

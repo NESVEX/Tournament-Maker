@@ -14,27 +14,26 @@ header h1 {
     width:20px;
 }
 
-.quarter-finals div, .quarter-finals button {
-    display: flex;
-    justify-content: center;
+header a {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 5px
 }
 
-.semi-finals div, .semi-finals button {
-    display: flex;
-    justify-content: center;
+#shuffleBtn {
+    background-color: orangered;
+    border: 0px;
 }
 
-.final div, .final button {
-    display: flex;
-    justify-content: center;
+.qFinals-match, .semiFinals-match, .final-match {
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    border: 2px solid white;
 }
 
-html h3 {
-    display: flex;
-    justify-content: center;
-}
-
-.introduce-teams div, .introduce-teams button {
+.quarter-finals, .semi-finals, .final {
     display: flex;
     justify-content: center;
 }
