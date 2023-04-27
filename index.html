@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <head>
     <title>Tournament</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Tournament!</h1>
-    <div>
+    <header>
+        <div><h1>Tournament!</h1></div>
+        <a href="https://twitter.com/elnesvex">Twitter</a>
+        <a href="https://github.com/NESVEX/Tournament-Maker">github</a>
+    </header>
+    <div class="introduce-teams">
 
         <h3>Introduce Team Names</h3>
 
@@ -18,78 +23,85 @@
         <div><input placeholder="Team 7" id="team7" maxlength="15"></div>
         <div><input placeholder="Team 8" id="team8" maxlength="15"></div>
 
-        <button onclick="shuffleTeams()" id="shuffleBtn">Shuffle!</button>
+        <div><button onclick="shuffleTeams()" id="shuffleBtn">Shuffle!</button></div>
 
     </div>
-    <div>
+    <div class="quarter-finals">
 
         <h3>Quarter Finals</h3>
-
-        <div>Q1 - 
+        
+        <div>
             <span id="qTeam1"><i>Team 1</i></span>
             <input id="Q1L" onkeypress=" return isNumber(event)" maxlength="3">
             <input id="Q1V" onkeypress=" return isNumber(event)" maxlength="3">
             <span id="qTeam2"><i>Team 2</i></span>
-            <button onclick="quarterFinal1()" id="quarterFinal1Btn">Submit</button>
         </div>
+        <div><button onclick="quarterFinal1()" id="quarterFinal1Btn">Submit</button></div>
 
-        <div>Q2 - 
+
+        <div>
             <span id="qTeam3"><i>Team 3</i></span>
             <input id="Q2L" onkeypress=" return isNumber(event)" maxlength="3">
             <input id="Q2V" onkeypress=" return isNumber(event)" maxlength="3">
             <span id="qTeam4"><i>Team 4</i></span>
-            <button onclick="quarterFinal2()" id="quarterFinal2Btn">Submit</button>
         </div>
+        <div><button onclick="quarterFinal2()" id="quarterFinal2Btn">Submit</button></div>
 
-        <div>Q3 - 
+
+        <div>
             <span id="qTeam5"><i>Team 5</i></span> 
             <input id="Q3L" onkeypress=" return isNumber(event)" maxlength="3">
             <input id="Q3V" onkeypress=" return isNumber(event)" maxlength="3">
             <span id="qTeam6"><i>Team 6</i></span>
-            <button onclick="quarterFinal3()" id="quarterFinal3Btn">Submit</button>
         </div>
+        <div><button onclick="quarterFinal3()" id="quarterFinal3Btn">Submit</button></div>
 
-        <div>Q4 - 
+
+        <div>
             <span id="qTeam7"><i>Team 7</i></span>
             <input id="Q4L" onkeypress=" return isNumber(event)" maxlength="3">
             <input id="Q4V" onkeypress=" return isNumber(event)" maxlength="3"> 
             <span id="qTeam8"><i>Team 8</i></span> 
-            <button onclick="quarterFinal4()" id="quarterFinal4Btn">Submit</button>
         </div>
+        <div><button onclick="quarterFinal4()" id="quarterFinal4Btn">Submit</button></div>
+
 
     </div>
-    <div>
+    <div class="semi-finals">
 
         <h3>Semi-finals</h3>
 
         <div>
-            S1 - <span id="localS1"><i>Winner Q1</i></span>
+            <span id="localS1"><i>Winner Q1</i></span>
             <input id="S1L" onkeypress=" return isNumber(event)" maxlength="3">
             <input id="S1V" onkeypress=" return isNumber(event)" maxlength="3">
             <span id="visitS1"><i>Winner Q2</i></span> 
-            <button onclick="semiFinal1()" id="semiFinal1Btn">Submit</button>
         </div>
+        <div><button onclick="semiFinal1()" id="semiFinal1Btn">Submit</button></div>
+
 
         <div>
-            S2 - <span id="localS2"><i>Winner Q3</i></span>
+            <span id="localS2"><i>Winner Q3</i></span>
             <input id="S2L" onkeypress=" return isNumber(event)" maxlength="3">
             <input id="S2V" onkeypress=" return isNumber(event)" maxlength="3">
             <span id="visitS2"><i>Winner Q4</i></span> 
-            <button onclick="semiFinal2()" id="semiFinal2Btn">Submit</button>
         </div>
+        <div><button onclick="semiFinal2()" id="semiFinal2Btn">Submit</button></div>
+
 
     </div>
-    <div>
+    <div class="final">
 
         <h3>Final</h3>
 
         <div>
-            Final - <span id="localTeamFinal"><i>Winner S1</i></span>
+            <span id="localTeamFinal"><i>Winner S1</i></span>
             <input id="localFinalScore" onkeypress=" return isNumber(event)" maxlength="3">
             <input id="visitFinalScore" onkeypress=" return isNumber(event)" maxlength="3">
             <span id="visitTeamFinal"><i>Winner S2</i></span> 
-            <button onclick="final()" id="finalBtn" >Submit</button>
         </div>
+        <div><button onclick="final()" id="finalBtn" >Submit</button></div>
+
 
     </div>
     <div>

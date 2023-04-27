@@ -1,0 +1,40 @@
+html {
+    color: white;
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+}
+
+header h1 {
+    box-sizing: inline;
+}
+
+.quarter-finals input, .semi-finals input, .final input {
+    width:20px;
+}
+
+.quarter-finals div, .quarter-finals button {
+    display: flex;
+    justify-content: center;
+}
+
+.semi-finals div, .semi-finals button {
+    display: flex;
+    justify-content: center;
+}
+
+.final div, .final button {
+    display: flex;
+    justify-content: center;
+}
+
+html h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.introduce-teams div, .introduce-teams button {
+    display: flex;
+    justify-content: center;
+}
